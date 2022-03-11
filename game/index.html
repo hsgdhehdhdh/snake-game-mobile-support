@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake game - game</title>
+    <script src='js/script.js'></script>
+    <link rel='stylesheet' href='css/styles.css'>
+  </head>
+  <body style='text-align: center; background-color: white;'>
+    <div><canvas id="gc" width="400" height="400" class='game-area'></canvas></div>
+    <div class='score-display' id='score'>Your score is: 0</div>
+    <div><input type='button' class='up-button' value='&uarr;' onclick='xv = 0; yv = -1;' readonly /></div>
+    <div><input type='button' class='left-button' value='&larr;' onclick='xv = -1; yv = 0;' readonly /><input onclick='xv = 0; yv = 1;' type='button' class='down-button' value='&darr;' readonly /><input type='button' onclick='xv = 1; yv = 0;' class='right-button' value='&rarr;' readonly /></div>
+    <p>&nbsp;</p>
+    <div><a href="../index.html"><input type='button' class='leave' value='Leave game' readonly /></a></div>
+  </body>
+</html>
